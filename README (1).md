@@ -66,12 +66,11 @@ transport-delay-predictor/
 
 ## EDA Highlights
 
-- **Snow and storms** cause the highest average delays (~2–3x clear weather)
-- **City events** (concerts, sports matches) increase delays by ~40–60%
-- **Rush hour + rain** combinations produce the worst delay spikes
-- Delays peak in **winter months** (Dec–Feb) across all transport types
-- **Bus** is the most delay-prone; **Metro** is the most resilient
-
+- Dataset contains **2,000 records** across 24 features
+- **75% of trips are delayed** — class imbalance worth noting
+- `delayed` is a binary target (0 = on time, 1 = delayed)
+- Weather, season, peak hour and event features are key predictors
+- Tree models overfit perfectly — linear model gives honest R²=0.617
 ---
 
 ## Setup & Usage

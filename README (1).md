@@ -16,15 +16,16 @@ Delays in public transport are heavily influenced by external factors like rain,
 
 | Model | MAE | RMSE | R² |
 |---|---|---|---|
-| Linear Regression | — | — | — |
-| Random Forest | — | — | — |
-| Gradient Boosting | — | — | — |
-| XGBoost | — | — | — |
+| Linear Regression | 0.239 | 0.273 | 0.617 |
+| Random Forest | 0.000 | 0.000 | 1.000 |
+| Gradient Boosting | 0.000 | 0.000 | 1.000 |
+| XGBoost | 0.000 | 0.000 | 1.000 |
 
-> Fill in your actual numbers after running the pipeline.
+> Tree-based models achieve perfect scores, indicating the `delayed` 
+> column is deterministically derived from other features in the dataset. 
+> Linear Regression (R²=0.617) gives a more realistic generalisation baseline.
 
-**Best model:** XGBoost (expected) — tree-based models handle non-linear weather + event interactions well.
-
+**Best honest model:** Linear Regression — R²=0.617
 ---
 
 ## Project Structure
